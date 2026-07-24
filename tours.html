@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours | ExploreEase</title>
+    <!--<link rel="stylesheet" href="stylestours.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    
+
+
+    <style>
+
+     .Eh{
+      text-align: center;
+      font-family: "Dancing Script" ,cursive;
+      color: #0f415c;
+      font-size: 30px;
+      font-weight: bold;
+     }
+     .Oh{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      font-size: 32px;
+      margin: 0px;
+      margin: top 0;
+     }
+
+
+
+     /* navigation bar*/
+           
+     .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:  #0A1618;
+        padding: 7px 5%;
+        position: fixed;
+        width: 90%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color:white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        
+    }
+
+    .logo img{
+      border-radius: 100%;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: all 0.3s;
+    }
+    
+    .nav-links a.active, 
+    .nav-links a:hover {
+        background:  #578ba0;
+    }
+
+    /* Search icon style */
+#search-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+#search-toggle:hover {
+    color: #0d0d0e;
+}
+
+/* Hidden input style */
+#search-box {
+    padding: 6px 0px;
+    padding-right: 0px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 0;
+    color: black;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    font-size: 14px;
+    background: rgb(247, 244, 244);
+}
+/* Show input */
+#search-box.active {
+    width: 180px;
+    opacity: 1;
+}
+
+
+  
+    @media (max-width:798px) {
+      .nav-links{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0A1618;
+        flex-direction: column;
+        padding: 20px 0;
+      }
+      
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+    
+    /* Navigation Icons */
+    .nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    }
+    
+    /* Like Icon */
+    .like-icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    }
+    
+    .like-icon:hover {
+        color: red;
+        transform: scale(1.2);
+    }
+    
+    /* Menu Icon */
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+        display: none; /* Initially hidden for larger screens */
+     }
+    
+     .footer {
+        margin-top:100px;
+        background-color: #0A1618 ;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      
+        
+      .footer-section-newsletter{
+         flex: 1.5 1.5 220px;
+         margin: 0%;
+    
+      }
+      .footer-section-newsletter h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: white;
+      }
+      
+      .footer-section-newsletter input[type="email"] {
+        padding: 10px;
+        margin: 10px;
+        margin-top: auto;
+        border-radius: 5px;
+        gap: 100px;
+        border: none;
+        outline: none;
+      }
+      
+      .footer-section-newsletter button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color:#578ba0;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      
+      .footer-section-newsletter button:hover {
+        background:  #ee4b4b;
+      }
+      
+      
+    
+      
+      .footer-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+        gap: 30px;
+      }
+    
+      .footer-logo{
+       display: flex;
+       align-items: center;
+       gap: 10px;
+    
+      }
+      .footer-logo img{
+       width: 60px;
+       height: auto;
+       border-radius: 100%;
+    
+      }
+      
+      .footer-box {
+        flex: 1 1 220px;
+      }
+      
+      .footer-box h4, .brand h3 {
+        margin-bottom: 15px;
+        color: #fff;
+      }
+      
+      .footer-box ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-box ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-box ul li a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      
+      .footer-box ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .brand p {
+        font-size: 14px;
+        color: #bbb;
+        line-height: 1.5;
+      }
+      
+      .social-icons i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #ccc;
+        transition: color 0.3s;
+      }
+      
+      .social-icons i:hover {
+        color: #ee4b4b;
+      }
+      
+      .gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .gallery-images img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        border-top: 1px solid #222;
+        color: #aaa;
+      }
+      
+      /* Back to top */
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #f5f8f5;
+        color: rgb(17, 1, 109);
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      
+      .back-to-top i {
+        font-size: 24px;
+      }
+    
+    
+      .menu-icon:hover {
+        transform: scale(1.1);
+     }
+    
+        body {
+          background: #f0f8ff;
+          margin: 0;
+          padding: 1rem;
+          font-family: 'Segoe UI', sans-serif;
+        }
+    
+        .tour-card {
+          background: #fff;
+          border-radius: 20px;
+          padding: 1.5rem;
+          margin: 1.5rem auto;
+          max-width: 800px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+          position: relative;
+        }
+    
+        .tour-card:hover {
+          transform: translateY(-5px);
+        }
+    
+        .tour-card img {
+          width: 100%;
+          max-height: 300px;
+          border-radius: 15px;
+          object-fit: cover;
+          margin-bottom: 1rem;
+        }
+    
+        .tour-card h2 {
+          font-size: 1.8rem;
+          margin-bottom: 0.25rem;
+          color: #1a3c40;
+        }
+    
+        .tour-card p {
+          font-style: italic;
+          color: #4d4d4d;
+          margin-bottom: 1rem;
+        }
+    
+        .tour-card ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0.5rem 0 1rem 0;
+        }
+    
+        .tour-card ul li {
+          padding: 0.3rem 0;
+          border-bottom: 1px dashed #d4d4d4;
+          font-size: 1rem;
+        }
+    
+        .tour-card strong {
+          color: #173f5f;
+        }
+    
+        details {
+          background: #f9f9f9;
+          border-radius: 10px;
+          padding: 0.8rem 1rem;
+          transition: all 0.3s ease;
+        }
+    
+        details summary {
+          cursor: pointer;
+          font-weight: bold;
+          color: #1c5876;
+          margin-bottom: 0.5rem;
+        }
+    
+        .like-btn {
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+          background: none;
+          border: none;
+          font-size: 1.8rem;
+          cursor: pointer;
+          color: #888;
+        }
+    
+        .like-btn.liked {
+          color: #e60026;
+        }
+    
+        .activity-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-top: 0.8rem;
+        }
+    
+        .activity-row span {
+          background: #e0f7fa;
+          padding: 0.4rem 0.8rem;
+          border-radius: 999px;
+          font-size: 0.9rem;
+          color: #00796b;
+        }
+    
+        .complete-btn {
+          background: #0077b6;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          cursor: pointer;
+          margin-top: 1rem;
+        }
+    
+        .review-section {
+          display: none;
+          margin-top: 1rem;
+          padding: 1rem;
+          border-top: 1px solid #ccc;
+        }
+    
+        .stars-input i {
+          font-size: 1.5rem;
+          color: #ccc;
+          cursor: pointer;
+        }
+    
+        .stars-input i.selected {
+          color: gold;
+        }
+    
+        .review-section textarea {
+          width: 100%;
+          height: 60px;
+          margin-top: 0.5rem;
+          padding: 0.5rem;
+          font-family: inherit;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+        }
+    
+        .submit-review {
+          margin-top: 0.5rem;
+          background: #00b894;
+          color: white;
+          border: none;
+          padding: 0.4rem 0.8rem;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="ExploreEase" width="60">
+                <span>ExploreEase</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html" class="active">Tours</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="index.html#view">Reviews</a></li>
+                <li><a href="index.html#foo">About Us</a></li>
+
+            </ul>
+            <div class="nav-icons">
+              <span style="background-color: #111111; color : #f8f2f2;" id="search-toggle"><i class="fas fa-search"></i></span>
+                      <input type="text" id="search-box" placeholder="Search..." />
+                      
+                <span class="like-icon">❤️</span>
+                <span id="menu-toggle" class="menu-icon">☰</span>
+                <a href="login.html"><span class="profile-icon">👤</span></a>
+            </div>
+        </nav>
+    </header>
+
+    
+
+
+
+<div style="margin-top: 75px;">
+  <h1 class="Eh">Explore</h1>
+  <h4 class="Oh">Our Customized Tours</h4>
+<section  class="tour-card" id="lock">
+  <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+  <img src="island.jpeg" alt="Havelock Island">
+  <h2>Havelock Island (Swaraj Dweep)</h2>
+  <p><em>“Lose yourself in coral dreams and island serenity on India’s secret paradise.”</em></p>
+  <ul>
+    <li><strong>Location:</strong> Andaman Islands, India</li>
+    <li><strong>Duration:</strong> 5 Days / 4 Nights</li>
+    <li><strong>Best Time:</strong> October–April</li>
+    <li><strong>Starting Price:</strong> $200</li>
+  </ul>
+  <details>
+    <summary>See Full Tour Details</summary>
+    <ul>
+      <li><strong>Highlights:</strong><br> Day 1: Arrive at port Blair,ferry to Havelock<br>Day 2: Scuba Diving &beach hopping<br>Day 3: kayaking & sunset at Radhanagar<br>Day 4: Excursion to Neil Island<br>Day 5: Return via port Blair</li>
+      <li><strong>Customizations:</strong> Honeymoon packages, scuba certification</li>
+      <li><strong>Includes:</strong> Ferries, guided activities, meals</li>
+      <li><strong>Reviews:</strong> ★★★★★ “Diving changed my life” – Thomas R.</li>
+    </ul>
+    <div class="activity-row">
+      <span>Snorkeling</span>
+      <span>Beach Walks</span>
+      <span>Kayaking</span>
+      <span>Island Hopping</span>
+    </div>
+  </details>
+
+  <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+  <div class="review-section">
+    <div class="stars-input">
+      <i onclick="rateStar(this,1)">★</i>
+      <i onclick="rateStar(this,2)">★</i>
+      <i onclick="rateStar(this,3)">★</i>
+      <i onclick="rateStar(this,4)">★</i>
+      <i onclick="rateStar(this,5)">★</i>
+    </div>
+    <textarea placeholder="Let us know your thoughts..."></textarea>
+    <button class="submit-review">Submit Review</button>
+  </div>
+</section>
+
+
+<section class="tour-card" id="play">
+    <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+    <img src="plateau.jpeg" alt="Tibetan Plateau">
+    <h2>Tibetan Plateau Adventure</h2>
+    <p><em>“Journey above the clouds into the spiritual roof of the world.”</em></p>
+    <ul>
+      <li><strong>Location:</strong> Tibet, China</li>
+      <li><strong>Duration:</strong> 9 Days / 8 Nights</li>
+      <li><strong>Best Time:</strong> May–October</li>
+      <li><strong>Starting Price:</strong> $750</li>
+    </ul>
+    <details>
+      <summary>See Full Tour Details</summary>
+      <ul>
+        <li><strong>Highlights:</strong><br>Day 1: Arrival in Lhasa & acclimatization
+          <br>Day 2–3: Cultural exploration of Lhasa (Potala, Jokhang, Norbulingka)
+          <br>Day 4: Scenic drive to Yamdrok Lake & Gyantse
+          <br>Day 5–6: Glaciers, monasteries & nomadic visits en route to Shigatse
+          <br>Day 7: Optional EBC detour or local village immersion
+          <br>Day 8: Return to Lhasa
+          <br>Day 9: Departure
+          </li>
+        <li><strong>Customizations:</strong> Meditation retreats, Photography trails</li>
+        <li><strong>Includes:</strong> Permits, guide, accommodations</li>
+        <li><strong>Reviews:</strong> ★★★★☆ “Unreal scenery and peace” – Priya S.</li>
+      </ul>
+      <div class="activity-row">
+        <span>Trekking</span>
+        <span>Spiritual Retreats</span>
+        <span>Cultural Tours</span>
+        <span>Camping</span>
+      </div>
+    </details>
+    <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+    <div class="review-section">
+      <div class="stars-input">
+        <i onclick="rateStar(this,1)">★</i>
+        <i onclick="rateStar(this,2)">★</i>
+        <i onclick="rateStar(this,3)">★</i>
+        <i onclick="rateStar(this,4)">★</i>
+        <i onclick="rateStar(this,5)">★</i>
+      </div>
+      <textarea placeholder="Let us know your thoughts..."></textarea>
+      <button class="submit-review">Submit Review</button>
+    </div>
+  </section>
+
+  <section class="tour-card" id="mongo">
+    <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+    <img src="mongolia.jpeg" alt="Mongolia Landscape">
+    <h2>To Landscapes of Mongolia</h2>
+    <p><em>“Gallop through open skies and nomadic heartlands.”</em></p>
+    <ul>
+      <li><strong>Location:</strong> Gobi Desert & Mongolian Steppe</li>
+      <li><strong>Duration:</strong> 6 Days / 5 Nights</li>
+      <li><strong>Best Time:</strong> June–September</li>
+      <li><strong>Starting Price:</strong> $500</li>
+    </ul>
+    <details>
+      <summary>See Full Tour Details</summary>
+      <ul>
+        <li><strong>Highlights:</strong><br>Day 1–2: Ulaanbaatar city & local culture
+
+          <br>Day 3–5: Gobi Desert exploration, camel riding
+          
+          <br>Day 6: Steppe camping & horseback riding with nomadsInclusions & Pricing</li>
+        <li><strong>Customizations:</strong> Horseback riding, star-gazing</li>
+        <li><strong>Includes:</strong> Transport, guides, local meals</li>
+        <li><strong>Reviews:</strong> ★★★★★ “Felt like a movie!” – Ayaan R.</li>
+      </ul>
+      <div class="activity-row">
+        <span>Horse Riding</span>
+        <span>Nomadic Life</span>
+        <span>Desert Safari</span>
+        <span>Yurt Stays</span>
+      </div>
+    </details>
+    <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+    <div class="review-section">
+      <div class="stars-input">
+        <i onclick="rateStar(this,1)">★</i>
+        <i onclick="rateStar(this,2)">★</i>
+        <i onclick="rateStar(this,3)">★</i>
+        <i onclick="rateStar(this,4)">★</i>
+        <i onclick="rateStar(this,5)">★</i>
+      </div>
+      <textarea placeholder="Let us know your thoughts..."></textarea>
+      <button class="submit-review">Submit Review</button>
+    </div>
+  </section>
+
+  <section class="tour-card" id="antra">
+    <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+    <img src="anat.jpeg" alt="Antarctica Cruise">
+    <h2>Fly & Cruise to Antarctica</h2>
+    <p><em>“Explore the last frontier with icebergs, penguins & surreal silence.”</em></p>
+    <ul>
+      <li><strong>Location:</strong> King George Island, Antarctica</li>
+      <li><strong>Duration:</strong> 6 Days / 5 Nights</li>
+      <li><strong>Best Time:</strong> December–February</li>
+      <li><strong>Starting Price:</strong> $5,900</li>
+    </ul>
+    <details>
+      <summary>See Full Tour Details</summary>
+      <ul>
+        <li><strong>Highlights:</strong><br>Day 1: Fly to King George Island, board expedition ship
+
+          <br>Day 2–4: Cruise & landings across Antarctic Peninsula
+          
+          <br>Day 5: Return flight to Chile
+          
+          <br>Day 6: Departure or optional Patagonia add-on
+          </li>
+        <li><strong>Customizations:</strong> Photography sessions, science station visits</li>
+        <li><strong>Includes:</strong> Flights, cruise, winter gear, meals</li>
+        <li><strong>Reviews:</strong> ★★★★★ “Life-changing experience” – Rachel G.</li>
+      </ul>
+      <div class="activity-row">
+        <span>Zodiac Cruising</span>
+        <span>Glacier Walks</span>
+        <span>Wildlife Watching</span>
+        <span>Photography</span>
+      </div>
+    </details>
+    <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+    <div class="review-section">
+      <div class="stars-input">
+        <i onclick="rateStar(this,1)">★</i>
+        <i onclick="rateStar(this,2)">★</i>
+        <i onclick="rateStar(this,3)">★</i>
+        <i onclick="rateStar(this,4)">★</i>
+        <i onclick="rateStar(this,5)">★</i>
+      </div>
+      <textarea placeholder="How was the tour..."></textarea>
+      <button class="submit-review">Submit Review</button>
+    </div>
+  </section>
+
+  <section class="tour-card" id="ok">
+    <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+    <img src="okavanga.jpeg" alt="Okavango Delta">
+    <h2>Okavango Delta Canoeing</h2>
+    <p><em>“Float through Africa’s untamed paradise.”</em></p>
+    <ul>
+      <li><strong>Location:</strong> Botswana, Africa</li>
+      <li><strong>Duration:</strong> 6 Days / 5 Nights</li>
+      <li><strong>Best Time:</strong> June–August</li>
+      <li><strong>Starting Price:</strong> $250</li>
+    </ul>
+    <details>
+      <summary>See Full Tour Details</summary>
+      <ul>
+        <li><strong>Highlights:</strong><br>Day 1: Arrival in Maun, transfer to the delta
+          <br>Day 2–4: Canoe exploration & walking safaris
+          <br>Day 5: Cultural village visit & sunset paddle
+          <br>Day 6: Return & departure
+          </li>
+        <li><strong>Customizations:</strong> Guided walks, birdwatching</li>
+        <li><strong>Includes:</strong> Canoe, meals, guides</li>
+        <li><strong>Reviews:</strong> ★★★★☆ “So raw and real” – Leo T.</li>
+      </ul>
+      <div class="activity-row">
+        <span>Canoeing</span>
+        <span>Wildlife Safari</span>
+        <span>Camping</span>
+        <span>Bird Watching</span>
+      </div>
+    </details>
+    <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+    <div class="review-section">
+      <div class="stars-input">
+        <i onclick="rateStar(this,1)">★</i>
+        <i onclick="rateStar(this,2)">★</i>
+        <i onclick="rateStar(this,3)">★</i>
+        <i onclick="rateStar(this,4)">★</i>
+        <i onclick="rateStar(this,5)">★</i>
+      </div>
+      <textarea placeholder="How was the tour..."></textarea>
+      <button class="submit-review">Submit Review</button>
+    </div>
+  </section>
+  <section class="tour-card" id="peru">
+    <button class="like-btn" onclick="toggleLike(this)">🤍</button>
+    <img src="andes.jpeg" alt="Inca Trail">
+    <h2>Inca Trail to Peruvian Andes</h2>
+    <p><em>“Step into history through cloud forests and ancient stone paths.”</em></p>
+    <ul>
+      <li><strong>Location:</strong> Cusco to Machu Picchu, Peru</li>
+      <li><strong>Duration:</strong> 5 Days / 4 Nights</li>
+      <li><strong>Best Time:</strong> April–October</li>
+      <li><strong>Starting Price:</strong> $950</li>
+    </ul>
+    <details>
+      <summary>See Full Tour Details</summary>
+      <ul>
+        <li><strong>Highlights:</strong><br>Day 1–2: Acclimatization in Cusco + Sacred Valley tour
+
+          <br>Day 3–4: Inca Trail trek (camping + porters)
+          
+          <br>Day 5: Machu Picchu tour & return
+          
+          </li>
+        <li><strong>Customizations:</strong> Private porters, extra day in Cusco</li>
+        <li><strong>Includes:</strong> Permits, meals, tents, guides</li>
+        <li><strong>Reviews:</strong> ★★★★★ “Spiritual and stunning” – Kavya M.</li>
+      </ul>
+      <div class="activity-row">
+        <span>Trekking</span>
+        <span>Heritage Walks</span>
+        <span>Camping</span>
+        <span>Photography</span>
+      </div>
+    </details>
+    <button class="complete-btn" onclick="showReview(this)">Give Review</button>
+    <div class="review-section">
+      <div class="stars-input">
+        <i onclick="rateStar(this,1)">★</i>
+        <i onclick="rateStar(this,2)">★</i>
+        <i onclick="rateStar(this,3)">★</i>
+        <i onclick="rateStar(this,4)">★</i>
+        <i onclick="rateStar(this,5)">★</i>
+      </div>
+      <textarea placeholder="How was the tour..."></textarea>
+      <button class="submit-review">Submit Review</button>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+      
+    <div class="footer-main">
+      <div class="footer-box brand">
+        <h3 class="footer-logo"><img src="logo.jpeg" alt="ExploreEase logo"> ExploreEase</h3>
+        <p>We are passionate about helping you explore the most beautiful places around the world. Our team provides the best travel information and tours to make your trips unforgettable. </p>
+    
+        <div class="social-icons">
+          <i class='bx bxl-facebook'></i>
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-youtube'></i>
+          <i class='bx bxl-instagram'></i>
+        </div>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login/Sign Up</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="plan.html">Plan it!</a></li>
+          <li><a href="index.html#view">Review</a></li>
+          <li><a href="index.html#foo">About Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box">
+        <h4>contact Us</h4>
+        <ul>
+          <li><a href="#">Email : support@exploreease.com</a></li>
+          <li><a href="#">Ph no : 987654321</a></li>
+          <li><a href="#">Location : Hyderabad,India</a></li>
+        
+        </ul>
+      </div>
+      <div class="footer-section-newsletter">
+        <h2>Get Updated The Latest Newsletter!</h2>
+        <form>
+          <input type="email" placeholder="Enter email address" required>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    
+  
+      <div class="footer-box gallery">
+        <h4>Our Gallery</h4>
+        <div class="gallery-images">
+          <img src="3.jpeg" alt="">
+              <img src="hike.jpeg" alt="">
+              <img src="13.jpeg" alt="">
+              <img src="8.jpeg" alt="">
+              <img src="4.jpeg" alt="">
+              <img src="2.jpeg" alt="">
+              <img src="1.jpeg" alt="">
+              <img src="7.jpeg" alt="">
+              <img src="14.jpeg" alt="">
+              <img src="9.jpeg" alt="">
+              <img src="15.jpeg" alt="">
+              <img src="6.jpeg" alt="">
+              <img src="16.jpeg" alt="">
+              <img src="11.jpeg" alt="">
+              <img src="10.jpeg" alt="">
+              <img src="5.jpeg" alt="">
+              <img src="12.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© Copyright 2025 by ExploreEase.All rights are Reserved.</p>
+    </div>
+  
+    <div class="back-to-top" onclick="scrollToTop()">
+      <i class='bx bx-chevron-up'></i>
+    </div>
+  </footer>
+<script>
+  function toggleLike(btn) {
+    btn.classList.toggle("liked");
+    btn.textContent = btn.classList.contains("liked") ? '❤️' : '🤍';
+  }
+
+  function showReview(button) {
+    const section = button.nextElementSibling;
+    section.style.display = 'block';
+    button.style.display = 'none';
+  }
+
+  function rateStar(star, index) {
+    const stars = star.parentElement.querySelectorAll('i');
+    stars.forEach((s, i) => {
+      if (i < index) s.classList.add('selected');
+      else s.classList.remove('selected');
+    });
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  }
+
+   // JS for toggling search box and handling Enter key
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("search-toggle");
+    const input = document.getElementById("search-box");
+
+    toggle.addEventListener("click", () => {
+        input.classList.toggle("active");
+        if (input.classList.contains("active")) {
+            input.focus();
+        }
+    });
+
+    input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            const query = input.value.trim();
+            if (query) {
+                alert(`Searching "${query}"`);
+                // Optional: write to footer or perform real search
+                input.value = "";
+            } else {
+                alert("Please enter a search term.");
+            }
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+

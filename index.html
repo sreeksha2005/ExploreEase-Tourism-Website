@@ -1,0 +1,623 @@
+ <!DOCTYPE html> 
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ExploreEase</title>
+            <link rel="stylesheet" href="styles2.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <!-- Make sure Font Awesome is loaded 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+          </head>
+        <body>
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <img style="border-radius: 100%;" src="logo.jpeg" alt="ExploreEase" width="62">
+                        <span>ExploreEase</span></div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="index.html#view">Reviews</a></li>
+                        <li><a href="index.html#foo">About Us</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                      <span style="background-color: #111111; color : #f8f2f2;" id="search-toggle"><i class="fas fa-search"></i></span>
+                      <input type="text" id="search-box" placeholder="Search..." />
+                      
+                      <span class="like-icon">❤️</span>
+                      <span id="menu-toggle" class="menu-icon">☰</span>
+                      <a href="login.html"><span class="profile-icon">👤</span></a>
+                  </div>
+                  
+                    
+                </nav>
+            </header>
+             <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            
+            <div class="hero-slide" style="background-image: url('img2.jpeg')">
+                <div class="hero-content">
+                    <h1>Your Journey Begins Here</h1>
+                    <p>Exclusive Tours Available.</p>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('img3.jpeg')">
+                <div class="hero-content">
+                    <h1>Discover Amazing Places</h1>
+                    <p>Explore the world with us</p>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('image6.jpeg')">
+                <div class="hero-content">
+                    <h1>Unforgettable Experiences</h1>
+                    <p>Create memories that last</p>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('image5.jpeg')">
+                <div class="hero-content">
+                    <h1>Crazy , Fun Activities</h1>
+                    <p>Enjoy every ride.</p>
+                </div>
+            </div>
+        </div>
+        
+           <!-- Search Box -->
+        <div class="search-box">
+            <div>
+                <label for="destination"><h3>Going To?</h3></label>
+                <select id="destination">
+                    <option value="">Select Destination</option>
+                    <option value="Beaches">Beaches</option>
+                    <option value="Forests">Forests</option>
+                    <option value="desserts">Desserts</option>
+                    <option value="Villa/Resorts">Villa/Resorts</option>
+                    <option value="Historical Sites">Historical Sites</option>
+                </select>
+            </div>
+			<div>
+			 <label for="Tour"><h3>Tours</h3></label>
+                <select id="Tour">
+                    <option value="">Select Tours</option>
+                    <option value="Havelock Island">Havelock Island</option>
+                    <option value="Tibetan Plateau Adventure">Tibetan Plateau Adventure</option>
+                    <option value="Okavango Delta Canoeing">Okavango Delta Canoeing</option>
+                    <option value="Fly & Cruise to Antarctica">Fly & Cruise to Antarctica</option>
+                    <option value="Peruvian Andes">Peruvian Andes</option>
+                    <option value="Landscape of Mongolia">Landscape of Mongolia</option>
+                </select>
+            </div>
+            <div>
+                <label for="activity"><h3>Activities</h3></label>
+                <select id="activity">
+                    <option value="">Select Activity</option>
+                    <option value="hiking">Hiking & Trekking</option>
+                    <option value="Scuba diving & Snorkeling">Scuba diving & Snorkeling</option>
+                    <option value="Museum & Historical visits">Museum & Historical visits</option>
+                    <option value="Ziplining">Ziplining</option>
+                    <option value="Surfing">Surfing</option>
+                    <option value="Spa & Wellness retreats ">Spa & Wellness retreats </option>
+                    <option value="Hot air ballon rides">Hot air ballon rides</option>
+                    <option value="Camping">Camping</option>
+
+                </select>
+            </div>
+            <div>
+                <label for="date"><h3>When?</h3></label>
+                <input type="date" id="date">
+            </div>
+            <!---
+            <div>
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" min="1" value="1">
+            </div>-->
+            <div>
+                <button onclick="searchTours()">Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- Destinations Section -->
+    <section class="featured-categories">
+        <h2 class="h4" >Destinations List</h2>
+        <h4>Go Exotic Places</h4>
+        <div class="categories-grid">
+            <a href="destinations.html?category=beaches" class="category-card">
+                <img src="beach.jpeg" alt="Beaches">
+                <div class="category-overlay">
+                    <h3>Beaches</h3>
+                </div>
+            </a>
+            
+            <a href="destinations.html?category=forests" class="category-card">
+                <img src="forest.jpeg" alt="Forests">
+                <div class="category-overlay">
+                    <h3>Forests</h3>
+                </div>
+            </a>
+            <a href="destinations.html?category=deserts" class="category-card">
+                <img src="dess.jpeg " alt="Deserts">
+                <div class="category-overlay">
+                    <h3>Deserts</h3>
+                </div>
+            </a>
+            
+            <a href="destinations.html?category=villas" class="category-card1">
+                <img src="villa.jpeg" alt="Villas/Resorts">
+                <div class="category-overlay">
+                    <h3>Villas/Resorts</h3>
+                </div>
+            </a>
+            
+            <a href="destinations.html?category=historical" class="category-card1">
+                <img src="his.jpeg" alt="Historical Sites">
+                <div class="category-overlay">
+                    <h3>Historical Sites</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+        
+<!-- Tours Section -->
+
+
+<section class="featured-tours">
+  <h2>Featured Tours</h2>
+<h4>Most Popular Tours</h4>
+  <div class="tours-slider-container">
+      <button class="slider-arrow left">←</button>
+      <div class="tours-grid">
+      <!-- Tour 1 -->
+      <div class="tour-card">
+          <img src="island.jpeg" alt="Havelock Island">
+          <div class="tour-info">
+              <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+              <h3>Havelock Island(Swaraj Dweep)</h3>
+              <!--<p class="tour-description">7-day luxury island hopping experience</p>-->
+
+              <div class="tour-meta">
+          <span class="duration">⏱️ 5 Days</span><br>
+          <span class="price">💰 $200</span><br>
+          <span class="people">🙋‍♀️ 20 people</span>
+       </div>
+          <a href="tours.html?#lock" ><button class="btn tour-btn">Explore Tour</button></a>
+          </div>
+      </div>
+
+      <!-- Tour 2 -->
+      <div class="tour-card">
+          <img src="plateau.jpeg" alt="Tibetan Plateau Adventure">
+          <div class="tour-info">
+              <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+              <h3>Tibetan Plateau Adventure</h3>
+              <!--<p class="tour-description">5-day hiking in the Himalayas</p>-->
+              <div class="tour-meta">
+                  <span class="duration">⏱️ 9 Days</span><br>
+                  <span class="price">💰 $750</span><br>
+                  <span class="people">🙋‍♀️ 15 people</span>
+               </div>
+                 <a href="tours.html?#play" ><button class="btn tour-btn">Explore Tour</button></a>
+          </div>
+      </div>
+
+      <!-- Tour 3 -->
+      
+      <div class="tour-card">
+          <img src="mongolia.jpeg" alt="To Landscape of Mongolia">
+          <div class="tour-info">
+              <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+              <h3>To Landscape of Mongolia</h3>
+              <div class="tour-meta">
+                  <span class="duration">⏱️ 6 Days</span><br>
+                  <span class="price">💰 $500</span><br>
+                  <span class="people">🙋‍♀️ 18 people</span>
+               </div>
+                 <a href="tours.html#mongo"><button class="btn tour-btn">Explore Tour</button></a>
+          </div>
+      </div>
+
+      <!-- Tour 4 -->
+      <div class="tour-card">
+          <img src="anat.jpeg" alt="Fly & Cruise to Antarctica">
+          <div class="tour-info">
+              <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+              <h3>Fly & Cruise to Antarctica</h3>
+              <div class="tour-meta">
+                  <span class="duration">⏱️ 6 Days</span>
+                  <span class="price">💰 $5900</span>
+                  <span class="people">🙋‍♀️ 12 people</span>
+              </div>
+              <a href="tours.html#antra"><button class="btn tour-btn">Explore Tour</button></a>
+          </div>
+       </div>
+  <!--tour 5-->
+  <div class="tour-card">
+      <img src="okavanga.jpeg" alt="Okavango Delta Canoeing">
+    <div class="tour-info">
+      <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+       <h3>Okavango Delta Canoeinga</h3>
+       <div class="tour-meta">
+           <span class="duration">⏱️ 6 Days</span>
+           <span class="price">💰 $250</span>
+           <span class="people">🙋‍♀️ 22 people</span>
+       </div>
+       <a href="tours.html#ok"><button class="btn tour-btn">Explore Tour</button></a>
+     </div>
+   </div>
+  <!--tour 6-->
+  <div class="tour-card">
+      <img src="andes.jpeg" alt="Inca trail to Peruvian Andes">
+     <div class="tour-info">
+      <!-- Rating Stars -->
+<div class="rating">
+<span class="star" onclick="setRating(this, 1)">★</span>
+<span class="star" onclick="setRating(this, 2)">★</span>
+<span class="star" onclick="setRating(this, 3)">★</span>
+<span class="star" onclick="setRating(this, 4)">★</span>
+<span class="star" onclick="setRating(this, 5)">★</span>
+<span class="rating-value">0.0</span> <!-- Example Rating--> 
+
+
+<!-- Like Button -->
+<span class="heart" onclick="toggleLike(this)">&#9829;</span></div><br>
+        <h3>Inca trail to Peruvian Andes</h3><br>
+        <div class="tour-meta">
+          <span class="duration">⏱️ 5 Days</span><br>
+          <span class="price">💰 $950</span><br>
+          <span class="people">🙋‍♀️ 28 people</span>
+       </div>
+       <a href="tours.html#peru"><button class="btn tour-btn">Explore Tour</button></a>
+      </div>
+    </div>
+
+
+  </div>
+
+   <button class="slider-arrow right">→</button>
+  </div>
+  <a href="tours.html" class="see-all-btn">View All Tours →</a>
+</section>
+
+<!--activities section-->
+<section class="activities-section">
+    <h2>Best Activities</h2>
+    <h4 style="font-size: 2.5rem; margin-top: 0;">Discover Our Activities</h4>
+    <div class="activity-carousel">
+        <div class="activities-container">
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-hiking"></i>
+                  <h4>Hiking</h4>
+                </div>
+                <div class="card-back">
+                  <p>Eco hiking. Explore untouched trails with local experts.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+            </div>
+           </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                 <i class="fas fa-person-swimming"></i>
+                  <h4>Scuba Diving</h4>
+                </div>
+                <div class="card-back">
+                  <p>Swim with vibrant marine life and explore coral reefs safely.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-landmark"></i>
+                  <h4>Historical Visits</h4>
+                </div>
+                <div class="card-back">
+                  <p>Step into history with guided tours of ancient wonders.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-feather-alt"></i>
+                  <h4>Zip Lining</h4>
+                </div>
+                <div class="card-back">
+                  <p>Fly through the trees in safe and scenic locations.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-water"></i>
+                  <h4>Surfing</h4>
+                </div>
+                <div class="card-back">
+                  <p>Ride the waves with lessons tailored for all skill levels.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-spa"></i>
+                  <h4>Spa & Wellness</h4>
+                </div>
+                <div class="card-back">
+                  <p>Rejuvenate your senses with eco-friendly retreats.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+    
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="bx bx-wind"></i>
+                  <h4>Balloon Rides</h4>
+                </div>
+                <div class="card-back">
+                  <p>Soar above scenic landscapes in a hot air balloon adventure.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="activity-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <i class="fas fa-campground"></i>
+                  <h4>Camping</h4>
+                </div>
+                <div class="card-back">
+                  <p>Connect with nature under starlit skies and cozy tents.<br><br> See these activities at <a href="tours.html">tours</a> and <a href="destinations.html">destinations.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+<!--testimonials or reviews section-->
+
+    <section id="view" class="testimonial-section">
+        <h2 style="font-size: 1.7rem; 
+        font-family: 'Bad Script' ,cursive; 
+        margin-bottom: 0.3rem; color: #ee4b4b;" >Reviews</h2>
+        <h4 style="font-size: 2.3rem; margin-top: 0;" >What They Say</h4>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="ladki3.jpeg" alt="User Image">
+                        <div class="text-box">
+                            <p>"ExploreEase helped me discover hidden gems. The trips were well-organized and hassle-free!"</p>
+                            <h4>Jessica Brown, <span>Journalist</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="ladka1.jpeg" alt="User Image">
+                        <div class="text-box">
+                            <p>"An amazing platform for budget-friendly and eco-friendly trips. Highly recommended!"</p>
+                            <h4>Michael Smith, <span>Travel Blogger</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="ladki1.jpeg" alt="User Image">
+                        <div class="text-box">
+                            <p>"Loved the customized tours and ease of navigation. A must-try for travel lovers!"</p>
+                            <h4>Sophia Davis, <span>Adventure Enthusiast</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="ladka2.jpeg" alt="User Image">
+                        <div class="text-box">
+                            <p>"A simple yet effective platform for travelers seeking unique and uncrowded places!"</p>
+                            <h4>Daniel Wilson, <span>Photographer</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+         <!--itenary planner-->
+         <section class="promo-section">
+          <div class="promo-content">
+            <div class="promo-image">
+              <img src="img5.jpeg" alt="Paris Tour">
+            </div>
+            <div class="promo-text">
+              <p class="sub-head">Dream Destination?</p>
+              <h2>Plan Your Trip with <span class="brand">ExploreEase</span></h2>
+              <p class="description">
+                Discover rare gems of the world — untouched, uncrowded, unforgettable. Travel smart, travel with heart.
+              </p>
+              <ul class="promo-list">
+                <li>🎒 Pack your vibe – your dream itinerary is just a click away!</li>
+                <li>🗺️ Don't just travel... craft your own epic adventure!</li>
+                <li>✨Organise your plans & trips.</li>
+              </ul>
+              <a href="plan.html" class="promo-btn">Plan it!</a>
+            </div>
+          </div>
+        </section>
+    
+                
+
+
+    <!-- Footer -->
+    <footer id="foo" class="footer">
+      
+        <div class="footer-main">
+          <div class="footer-box brand">
+            <h3 class="footer-logo"><img src="logo.jpeg" alt="ExploreEase logo"> ExploreEase</h3>
+            <p>We are passionate about helping you explore the most beautiful places around the world which are unique , uncrowded , and fun. Our team provides the best travel information and tours to make your trips unforgettable. </p>
+        
+            <div class="social-icons">
+              <i class='bx bxl-facebook'></i>
+              <i class='bx bxl-twitter'></i>
+              <i class='bx bxl-youtube'></i>
+              <i class='bx bxl-instagram'></i>
+            </div>
+          </div>
+      
+          <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login/Sign Up</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="plan.html">Plan it!</a></li>
+              <li><a href="index.html#view">Review</a></li>
+              <li><a href="index.html#foo">About Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-box">
+            <h4>contact Us</h4>
+            <ul>
+              <li><a href="#">Email : support@exploreease.com</a></li>
+              <li><a href="#">Ph no : 987654321</a></li>
+              <li><a href="#">Location : Hyderabad,India</a></li>
+            
+            </ul>
+          </div>
+          <div class="footer-section-newsletter">
+            <h2>Get Updated The Latest Newsletter!</h2>
+            <form>
+              <input type="email" placeholder="Enter email address" required>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        
+      
+          <div class="footer-box gallery">
+            <h4>Our Gallery</h4>
+            <div class="gallery-images">
+              <img src="3.jpeg" alt="">
+              <img src="hike.jpeg" alt="">
+              <img src="13.jpeg" alt="">
+              <img src="8.jpeg" alt="">
+              <img src="4.jpeg" alt="">
+              <img src="2.jpeg" alt="">
+              <img src="1.jpeg" alt="">
+              <img src="7.jpeg" alt="">
+              <img src="14.jpeg" alt="">
+              <img src="9.jpeg" alt="">
+              <img src="15.jpeg" alt="">
+              <img src="6.jpeg" alt="">
+              <img src="16.jpeg" alt="">
+              <img src="11.jpeg" alt="">
+              <img src="10.jpeg" alt="">
+              <img src="5.jpeg" alt="">
+              <img src="12.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© Copyright 2025 by ExploreEase.All rights are Reserved.</p>
+        </div>
+      
+        <div class="back-to-top" onclick="scrollToTop()">
+          <i class='bx bx-chevron-up'></i>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

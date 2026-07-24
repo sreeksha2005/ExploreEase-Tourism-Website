@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup | ExploreEase</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Add this script to ensure forms initialize properly -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide signup form by default
+            const signupForm = document.getElementById('signup-form');
+            if (signupForm) signupForm.classList.add('hidden');
+            
+            // Show login form by default
+            const loginForm = document.getElementById('login-form');
+            if (loginForm) loginForm.classList.remove('hidden');
+        });
+    </script>
+</head>
+<body>
+   
+    <!-- Rest of your HTML -->
+    <header>
+        <nav style="background-color: #111111;" class="navbar">
+            <div class="logo">
+                <img style="border-radius: 100%;" src="logo.jpeg" alt="ExploreEase" width="62">
+                <span>ExploreEase</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="index.html#view">Reviews</a></li>
+                <li><a href="index.html#foo">About Us</a></li>
+            </ul>
+            <div class="nav-icons">
+              <span style="background-color: #111111; color : #f8f2f2;" id="search-toggle"><i class="fas fa-search"></i></span>
+              <input type="text" id="search-box" placeholder="Search..." />
+              
+              <span class="like-icon">❤️</span>
+              <span id="menu-toggle" class="menu-icon">☰</span>
+              <a href="login.html"><span class="profile-icon">👤</span></a>
+          </div>
+          
+            
+        </nav>
+    </header>
+    
+    <main class="auth-container">
+        <div class="auth-card">
+            <!-- Login Form -->
+            <div class="auth-form active" id="login-form">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Login to continue your journey</p>
+                
+                <form class="auth-form-content" id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+                
+                <div class="social-login-horizontal">
+                    <button type="button" class="social-icon google" title="Login with Google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button type="button" class="social-icon apple" title="Login with Apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                    <button type="button" class="social-icon facebook" title="Login with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                </div>
+                
+                <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+            </div>
+            
+            <!-- Signup Form -->
+            <div class="auth-form" id="signup-form">
+                <h1>Create Account</h1>
+                <p class="subtitle">Join us to start your adventure</p>
+                
+                <form class="auth-form-content" id="signupForm">
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password (min. 8 chars)" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                
+                <div class="divider">
+                    <span>or sign up with</span>
+                </div>
+                
+                <div class="social-login-horizontal">
+                    <button type="button" class="social-icon google" title="Sign up with Google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button type="button" class="social-icon apple" title="Sign up with Apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                    <button type="button" class="social-icon facebook" title="Sign up with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                </div>
+                
+                <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background-color: #111111;">
+        <p>&copy; 2025 ExploreEase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

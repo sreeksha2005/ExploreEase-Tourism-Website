@@ -1,0 +1,1996 @@
+<!-- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations | ExploreEase</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Additional inline styles for destinations page */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        .category-btn {
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .category-btn:hover, .category-btn.active {
+            background: #ff8c00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span>ExploreEase</span></div>
+            <ul class="nav-links">
+                <li><a href="index    .html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+    <span class="like-icon">❤️</span>
+    <span id="menu-toggle" class="menu-icon">☰</span>
+    <a href="login.html"><span class="profile-icon">👤</span></a>
+</div>
+        </nav>
+    </header>
+
+    <main class="destinations-main">
+        <section class="destinations-hero">
+            <h1>Discover Amazing Destinations</h1>
+            <p>Explore our curated collection of breathtaking locations worldwide</p>
+        </section>
+
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="beaches">🏖️ Beaches</button>
+            <button class="category-btn" data-category="deserts">🏜️ Deserts</button>
+            <button class="category-btn" data-category="forests">🌲 Forests</button>
+            <button class="category-btn" data-category="villas">🏡 Villas/Resorts</button>
+            <button class="category-btn" data-category="historical">🏛️ Historical</button>
+        </div>
+
+        <section class="destinations-container">
+            <!-- Beaches Category --
+            <div class="category-section" id="beaches">
+                <h2 class="category-title">Beach Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="polem.jpeg" alt="Palolem Beach" loading="lazy">
+                        <div class="card-content">
+                            <h3>Palolem Beach</h3>
+                            <p>It  is known for its crescent-shaped shoreline, tranquil bay, and laid-back atmosphere, offering a peaceful and rejuvenating experience with opportunities for dolphin spotting and enjoying seafood from beach shacks. The best time to visit is in the winter months.</p>
+
+                            <p>Country : India</p>
+                            <p>Language spoken : Hindi, marathi, English </p>
+                            <p>Visa requirements : personal documents required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-umbrella-beach"></i> Beach</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <a href="tours.html?destination=Palolem Beach" class="btn">View Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <img src="radha.jpeg" alt="Radhanagar Beach" loading="lazy">
+                        <div class="card-content">
+                            <h3>Radhanagar Beach</h3>
+                            <p>It  is a popular beach on Havelock Island in the Andaman and Nicobar Islands. It's known for its natural beauty, environmental sustainability, and clear waters. Best to visit during dry seasons.</p>
+<p>Country : India</p>
+<p>Language spoken : Tamil, Hindi, English </p>
+<p>Visa requirements : Required.</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-umbrella-beach"></i> Beach</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Radhanagar Beach" class="btn">View Tours</a>
+                        </div>
+                    </div>
+           
+            <div class="destination-card">
+                        <img src="pink.jpeg" alt="Pink Beach" loading="lazy">
+                        <div class="card-content">
+                            <h3>Pink Beach</h3>
+                            <p> It is one of the seven pink beaches on the planet. It is located on the northeastern point of Komodo Island and it is just one of the many amazing features of this island. This unique beach gives tourists another reason to visit the island, besides meeting the Komodo dragons.</p>
+<p>Country : Indonesia </p>
+<p>Language spoken : Bahasa , English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-umbrella-beach"></i> Beach</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Pink Beach" class="btn">View Tours</a>
+                        </div>
+                    </div>
+     
+            
+            <div class="destination-card">
+                        <img src="dead.jpeg" alt="Dead sea" loading="lazy">
+                        <div class="card-content">
+                            <h3>Dead sea</h3>
+                            <p>It also known by other names, is a landlocked salt lake bordered by Jordan to the east, the Israeli-occupied West Bank to the west and Israel to the southwest. It lies in the endorheic basin of the Jordan Rift Valley, and its main tributary is the Jordan River.</p>
+<p>Country : Jordan</p>
+<p>Language spoken : Arabic </p>
+<p>Visa requirements : Yes</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-umbrella-beach"></i> Beach</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Dead sea" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deserts Category --
+            <div class="category-section" id="deserts">
+                <h2 class="category-title">Desert Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="jai.jpeg" alt="Jaisalmer Desert" loading="lazy">
+                        <div class="card-content">
+                            <h3>Jaisalmer Desert</h3>
+                            <p>It is a former medieval trading center and a princely state in the western Indian state of Rajasthan, in the heart of the Thar Desert. Known as the "Golden City," it's distinguished by its yellow sandstone architecture.</p>
+<p>Country : India</p>
+<p>Language spoken : Marwari,Hindi</p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-sun"></i> Desert</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <a href="tours.html?destination=Jaisalmer" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                     <div class="destination-card">
+                        <img src="jeep.jpeg" alt="Jeep Safari Desert" loading="lazy">
+                        <div class="card-content">
+                            <h3>Jeep Safari Desert</h3>
+                            <p>The major reason by which many people get attracted to undertake desert safaris in Dubai is the combination of fun, novelty and the Arabian hospitality.</p>
+<p>Country : Dubai</p>
+<p>Language spoken : Arabic, English</p> 
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-sun"></i> Desert</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <a href="tours.html?destination=Jeep Safari" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                     <div class="destination-card">
+                        <img src="migra.jpeg" alt="The Serengeti" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Serengeti Great Migration</h3>
+                            <p>It  is a spectacular annual event where millions of wildebeest, zebra, and other ungulates migrate across the Serengeti-Mara ecosystem in search of grazing and water, following a clockwise pattern. </p>
+<p>Country : Tanzania,kenya</p>
+<p>Language spoken : English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-sun"></i> Desert</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <a href="tours.html?destination=The Serengeti" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forests Category --
+            <div class="category-section" id="forests">
+                <h2 class="category-title">Forest Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="amazon.jpeg" alt="Amazon Jungle camph" loading="lazy">
+                        <div class="card-content">
+                            <h3>Amazon Jungle camph</h3>
+                            <p>The Amazon rainforest, covering much of northwestern Brazil and extending into Colombia, Peru and other South American countries, is the world’s largest tropical rainforest, famed for its biodiversity. It’s crisscrossed by thousands of rivers, including the powerful Amazon. </p>
+<p>Country : Brazil</p>
+<p>Language spoken : Portugese, English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-tree"></i> Forest</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <a href="tours.html?destination=Amazon Jungle camph" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="trek.jpeg" alt="Combodia Jungle Trek" loading="lazy">
+                        <div class="card-content">
+                            <h3>Combodia Jungle Trek</h3>
+                            <p>Cambodia is jungle hiking a National Park trekking hiking,Gibbons watching in VenSai-Siempang National Park ,Community jungle trek and homestay,Days Trips to visit the volcanic lake ,waterfalls,gem mines,indigenous villages and their ancient cemeteries around Banlung Ratanakiri Cambodia.</p>
+ <p>Country : Cambodia </p>
+ <p>Language spoken : French, English </p>
+ <p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-tree"></i> Forest</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <a href="tours.html?destination=Combodia Jungle Trek" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="park.jpeg" alt="Sundarbans National Park" loading="lazy">
+                        <div class="card-content">
+                            <h3>Sundarbans National Park</h3>
+                            <p>It  is a national park in West Bengal, India, and core part of tiger reserve and biosphere reserve. It is part of the Sundarbans on the Ganges Delta and adjacent to the Sundarban Reserve Forest in Bangladesh. It is located to south-west of Bangladesh. </p>
+<p>Country : India</p>
+<p>Language spoken : Hindi, Bengali, English</p> 
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-tree"></i> Forest</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <a href="tours.html?destination=Sundarbans National Park" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="khasi.jpeg" alt="The Khasi Hills" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Khasi Hills</h3>
+                            <p>They are a low mountain range in the Meghalaya state of India. They are part of the Garo-Khasi-Jaintia range and are known for their scenic beauty. The Khasi Hills are home to the Khasi people, who have a traditional matrilineal social system. </p>
+<p>Country : India</p>
+<p>Language spoken : khasi , Garo</p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-tree"></i> Forest</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <a href="tours.html?destination=The Khasi Hills" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Villas/Resorts Category --
+            <div class="category-section" id="villas">
+                <h2 class="category-title">Luxury Villas & Resorts</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="glen.jpeg" alt="The Glen Luxury Villa" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Glen Villas</h3>
+                            <p>This sprawling 12 BHK villa in Lonavala is a massive 1.5-acre playground where luxury meets excitement. As you step inside, prepare to be wowed by not one but two grand living rooms and twelve enchanting bedrooms, each framed by huge glass windows that bring the lush outdoors right into your space.</p>
+<p>Country  : India</p>
+<p>Language spoken : Hindi, English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-hotel"></i> Resort</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Glen" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                     <div class="destination-card">
+                        <img src="sebara.jpeg" alt="shebara resort" loading="lazy">
+                    <div class="card-content">
+                            <h3>shebara resort</h3>
+                            <p>We create timeless experiences for our guests, balancing modern design with a focus on the present, while upholding hospitality's core values of generosity and compassion to shape lasting memories.</p>
+<p>Country : Saudi Arabia </p>
+<p>Language spoken : Arabic , English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-hotel"></i> Resort</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=shebara resort" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                     <div class="destination-card">
+                        <img src="dine.jpeg" alt="Della sky dinning" loading="lazy">
+                    <div class="card-content">
+                            <h3>Della sky dinning</h3>
+                            <p>Eclectic, audacious and inspiring all at once, the sky dinning at Della Resorts is a flagship restaurant par excellence. It is one of the best restaurants in India serving the most exquisite Italian gourmet fare inspired by Jimmy Mistry’s regular sojourns across Italy. The restaurant has manifested into a 4000 sq. ft, fine dining space, seating 180 discerning guests with a gorgeous al fresco sitting.</p>
+<p>Country : India</p>
+<p>Language spoken : Hindi, English</p> 
+<p>Visa requirements: required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-hotel"></i> Resort</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Della sky dinning" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="casa.jpeg" alt="Casa koko" loading="lazy">
+                    <div class="card-content">
+                            <h3>Casa koko</h3>
+                            <p>Casa Koko stands as an unparalleled masterpiece of architectural grandeur.This exquisite 9-bedroom oceanfront villa is gracefully nestled within Punta Mita's prestigious enclave, seamlessly marrying the awe-inspiring beauty of its natural surroundings with unmatched opulence and comfort.</p>
+<p>Country : Mexico</p>
+<p>Language spoken : Spanish , English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-hotel"></i> Resort</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="tours.html?destination=Casa koko" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Sites Category --
+            <div class="category-section" id="historical">
+                <h2 class="category-title">Historical Sites</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="magnet.jpeg" alt="Magnet Hill" loading="lazy">
+                        <div class="card-content">
+                            <h3>Magnet Hill</h3>
+                            <p>It is a gravity hill located, near Leh in Leh district of Ladakh, India. The layout of the area and surrounding slopes create the optical illusion of a hill. The hill road is actually a downhill road. Objects and cars on the hill road may appear to roll uphill in defiance of gravity when they are, in fact, rolling downhill.</p>
+<p>Country : India</p>
+<p>Language spoken : Bodhi,Hindi</p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-landmark"></i> Historical</span>
+                                <span><i class="fas fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="tours.html?destination=Magnet Hill" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                
+                <div class="destination-card">
+                        <img src="louvre.jpeg" alt="The Louvre" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Louvre</h3>
+                            <p>The Louvre Museum , is a national art museum in Paris, France, and one of the most famous museums in the world. It is located on the Right Bank of the Seine in the city's 1st arrondissement  and home to some of the most canonical works of Western art, including the Mona Lisa, Venus de Milo, and Winged Victory.</p>
+<p>Country : France</p>
+<p>Language spoken : French , English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-landmark"></i> Historical</span>
+                                <span><i class="fas fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="tours.html?destination=Louvre" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                
+                <div class="destination-card">
+                        <img src="giza.jpeg" alt="The Great Sphinx of Giza" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Great Sphinx of Giza</h3>
+                            <p>It is a limestone statue of a reclining sphinx, a mythical creature with the head of a human and the body of a lion.Facing east, it stands on the Giza Plateau on the west bank of the Nile in Giza, Egypt. The face of the Sphinx appears to represent the pharaoh Khafre.</p>
+<p>Country : Egypt </p>
+<p>Language spoken : Arabic, English </p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-landmark"></i> Historical</span>
+                                <span><i class="fas fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="tours.html?destination=The Great Sphinx of Giza" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="sun.jpeg" alt="Konark Sun Temple" loading="lazy">
+                        <div class="card-content">
+                            <h3>Konark Sun Temple</h3>
+                            <p>It is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres , northeast from Puri city on the coastline in Puri district, Odisha, India.The temple is attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE.</p>
+<p>Country : India</p>
+<p>Language spoken : odia , Hindi</p>
+<p>Visa requirements : required</p>
+                            <div class="destination-meta">
+                                <span><i class="fas fa-landmark"></i> Historical</span>
+                                <span><i class="fas fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="tours.html?destination=Konark Sun Temple" class="btn">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ExploreEase. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Category filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const categorySections = document.querySelectorAll('.category-section');
+            
+            // Get category from URL if present
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlCategory = urlParams.get('category');
+            
+            // Filter destinations when category button is clicked
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide categories
+                    if (category === 'all') {
+                        categorySections.forEach(section => {
+                            section.style.display = 'block';
+                        });
+                    } else {
+                        categorySections.forEach(section => {
+                            section.style.display = section.id === category ? 'block' : 'none';
+                        });
+                    }
+                    
+                    // Update URL without reload
+                    history.pushState(null, '', `?category=${category}`);
+                });
+            });
+            
+            // If URL has category parameter, activate it
+            if (urlCategory) {
+                const targetBtn = document.querySelector(`.category-btn[data-category="${urlCategory}"]`);
+                if (targetBtn) targetBtn.click();
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations | ExploreEase</title>
+    <link rel="stylesheet" href="planner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        
+    <style>
+
+        /*header css*/
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #111111;
+    padding: 7px 5%;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo img{
+      border-radius: 100%;
+    }
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.nav-links a.active, 
+.nav-links a:hover {
+    background:  #578ba0;
+}
+
+.nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+
+    #search-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+#search-toggle:hover {
+    color: #0d0d0e;
+}
+
+/* Hidden input style */
+#search-box {
+    padding: 6px 0px;
+    padding-right: 0px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 0;
+    color: black;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    font-size: 14px;
+    background: rgb(247, 244, 244);
+}
+/* Show input */
+#search-box.active {
+    width: 180px;
+    opacity: 1;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Like Icon */
+.like-icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.like-icon:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden for larger screens */
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+        /* Additional inline styles for destinations page */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        .category-btn {
+            padding: 10px 20px;
+            background: #d86e6e;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .destinations-hero h1{
+            font-family: 'Dancing Script' , cursive;
+            font-weight: 1000;
+        }
+        .destinations-hero p{
+            font-weight: 400;
+        }
+        .category-btn:hover, .category-btn.active {
+            background: #55082c;
+            color: rgb(255, 251, 251);
+        }
+        
+        /* Destination modal styles */
+        .destination-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            z-index: 2000;
+            overflow-y: auto;
+        }
+        
+        
+        .modal-content {
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        .modal-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .star-rating {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #ac3c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #c75b5b;
+        }
+        
+        /* Review Form Styles */
+        .review-form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .review-form h3 {
+            margin-bottom: 15px;
+        }
+
+        .review-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+            min-height: 100px;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .review-form button {
+            background-color: #751616;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .review-form button:hover {
+            background-color: #c75b5b;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            margin-top: 30px;
+        }
+
+        .review {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .reviewer {
+            font-weight: bold;
+        }
+
+        .review-date {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .review-stars {
+            color: #ffc107;
+            margin: 5px 0;
+        }
+
+        .review-text {
+            line-height: 1.5;
+        }
+
+        /* Like Button Styles */
+        .like-container {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .like-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-right: 8px;
+            transition: transform 0.2s;
+        }
+
+        .like-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .like-count {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .modal-content {
+                margin: 20px auto;
+                padding: 15px;
+                width: 90%;
+            }
+
+            .review-form {
+                padding: 15px;
+            }
+        }
+        /* Destination Card Like Button */
+        .destination-card {
+            position: relative;
+        }
+
+        .card-like-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s;
+            z-index: 1;
+        }
+
+        .card-like-btn:hover {
+            transform: scale(1.1);
+            background: #d6d5d5;
+        }
+
+        .card-like-btn.liked {
+            color: red;
+        }
+
+        .card-like-count {
+            position: absolute;
+            top: 55px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 2px 8px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .card-like-btn {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+            }
+
+            .card-like-count {
+                top: 45px;
+                font-size: 11px;
+            }
+        }
+        /*footer css*/
+        .footer {
+        margin-top:100px;
+        background-color: #111111;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      
+        
+      .footer-section-newsletter{
+         flex: 1.5 1.5 220px;
+         margin: 0%;
+    
+      }
+      .footer-section-newsletter h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: white;
+      }
+      
+      .footer-section-newsletter input[type="email"] {
+        padding: 10px;
+        margin: 10px;
+        margin-top: auto;
+        border-radius: 5px;
+        gap: 100px;
+        border: none;
+        outline: none;
+      }
+      
+      .footer-section-newsletter button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #578ba0;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      
+      .footer-section-newsletter button:hover {
+        background:  #ee4b4b;
+      }
+      
+      
+    
+      
+      .footer-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+        gap: 30px;
+      }
+    
+      .footer-logo{
+       display: flex;
+       align-items: center;
+       gap: 10px;
+    
+      }
+      .footer-logo img{
+       width: 60px;
+       height: auto;
+       border-radius: 100%;
+    
+      }
+      
+      .footer-box {
+        flex: 1 1 220px;
+      }
+      
+      .footer-box h4, .brand h3 {
+        margin-bottom: 15px;
+        color: #fff;
+      }
+      
+      .footer-box ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-box ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-box ul li a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      
+      .footer-box ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .brand p {
+        font-size: 14px;
+        color: #bbb;
+        line-height: 1.5;
+        font-family:Arial ;
+      }
+      
+      .social-icons i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #ccc;
+        transition: color 0.3s;
+      }
+      
+      .social-icons i:hover {
+        color: #ee4b4b;
+      }
+      
+      .gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .gallery-images img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        border-top: 1px solid #222;
+        color: #aaa;
+      }
+      
+      /* Back to top */
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #f5f8f5;
+        color: rgb(17, 1, 109);
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      
+      .back-to-top i {
+        font-size: 24px;
+      }
+    
+    
+      .menu-icon:hover {
+        transform: scale(1.1);
+     }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="ExploreEase" width="62">
+                <span>ExploreEase</span></div>
+            <ul class="nav-links">
+                <li><a href="index    .html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="index    .html#view">Reviews</a></li>
+                <li><a href="index    .html#foo">About Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <span style="background-color: #111111; color : #f8f2f2;" id="search-toggle"><i class="fas fa-search"></i></span>
+                <input type="text" id="search-box" placeholder="Search..." />
+                
+                <span class="like-icon">❤️</span>
+                <span id="menu-toggle" class="menu-icon">☰</span>
+                <a href="login.html"><span class="profile-icon">👤</span></a>
+            </div>
+        </nav>
+    </header>
+    <main class="destinations-main">
+        <section class="destinations-hero">
+            <h1>Discover Amazing Destinations</h1>
+            <p>Explore our curated collection of breathtaking locations worldwide</p>
+        </section>
+
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="beaches">🏖️ Beaches</button>
+            <button class="category-btn" data-category="deserts">🏜️ Deserts</button>
+            <button class="category-btn" data-category="forests">🌲 Forests</button>
+            <button class="category-btn" data-category="villas">🏡 Villas/Resorts</button>
+            <button class="category-btn" data-category="historical">🏛️ Historical</button>
+        </div>
+
+        <section class="destinations-container">
+            <!-- Beaches Category -->
+            <div class="category-section" id="beaches">
+                <h2 class="category-title">Beach Destinations</h2>
+                <div class="destinations-grid">
+                
+                <div class="destination-card">
+                    <button class="card-like-btn" data-destination="Palolem Beach">🤍</button>
+                    <span class="card-like-count" data-destination="Palolem Beach">0</span>
+                    <img src="polem.jpeg" alt="Palolem Beach" loading="lazy">
+                    <div class="card-content">
+                        <h3>Palolem Beach</h3>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8 (1,234 reviews)</span>
+                        </div>
+                        <p>It is known for its crescent-shaped shoreline, tranquil bay, and laid-back atmosphere, offering a peaceful and rejuvenating experience with opportunities for dolphin spotting and enjoying seafood from beach shacks. <strong>Best time to visit:</strong> November to March.</p>
+                        <button class="btn view-destination" data-destination="Palolem Beach">View Destination</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <button class="card-like-btn" data-destination="Radhanagar Beach">🤍</button>
+                    <span class="card-like-count" data-destination="Radhanagar Beach">0</span>
+                    <img src="radha.jpeg" alt="Radhanagar Beach" loading="lazy">
+                    <div class="card-content">
+                        <h3>Radhanagar Beach</h3>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (892 reviews)</span>
+                        </div>
+                        <p>It is a popular beach on Havelock Island in the Andaman and Nicobar Islands. It's known for its natural beauty, environmental sustainability, and clear waters. Best to visit during dry seasons. <strong>Best time to visit:</strong> October to May.</p>
+                        <button class="btn view-destination" data-destination="Radhanagar Beach">View Destination</button>
+                    </div>
+                </div>
+       
+                <div class="destination-card">
+                    <button class="card-like-btn" data-destination="Pink Beach">🤍</button>
+                    <span class="card-like-count" data-destination="Pink Beach">0</span>
+                    <img src="pink.jpeg" alt="Pink Beach" loading="lazy">
+                    <div class="card-content">
+                        <h3>Pink Beach</h3>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (1,567 reviews)</span>
+                        </div>
+                        <p>It is one of the seven pink beaches on the planet. It is located on the northeastern point of Komodo Island and it is just one of the many amazing features of this island. This unique beach gives tourists another reason to visit the island, besides meeting the Komodo dragons. <strong>Best time to visit:</strong> April to November.</p>
+                        <button class="btn view-destination" data-destination="Pink Beach">View Destination</button>
+                    </div>
+                </div>
+     
+                <div class="destination-card">
+                    <button class="card-like-btn" data-destination="Dead sea">🤍</button>
+                    <span class="card-like-count" data-destination="Dead sea">0</span>
+                    <img src="dead.jpeg" alt="Dead sea" loading="lazy">
+                    <div class="card-content">
+                        <h3>Dead sea</h3>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (2,345 reviews)</span>
+                        </div>
+                        <p>It also known by other names, is a landlocked salt lake bordered by Jordan to the east, the Israeli-occupied West Bank to the west and Israel to the southwest. It lies in the endorheic basin of the Jordan Rift Valley, and its main tributary is the Jordan River. <strong>Best time to visit:</strong> Spring (March to May) or autumn (September to November).</p>
+                        <button class="btn view-destination" data-destination="Dead sea">View Destination</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Deserts Category -->
+            <div class="category-section" id="deserts">
+                <h2 class="category-title">Desert Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Jaisalmer Desert">🤍</button>
+                        <span class="card-like-count" data-destination="Jaisalmer Desert">0</span>
+                        <img src="jai.jpeg" alt="Jaisalmer Desert" loading="lazy">
+                        <div class="card-content">
+                            <h3>Jaisalmer Desert</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0 (1,876 reviews)</span>
+                            </div>
+                            <p>It is a former medieval trading center and a princely state in the western Indian state of Rajasthan, in the heart of the Thar Desert. Known as the "Golden City," it's distinguished by its yellow sandstone architecture. <strong>Best time to visit:</strong> October to March.</p>
+                            <button class="btn view-destination" data-destination="Jaisalmer Desert">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Jeep Safari Desert">🤍</button>
+                        <span class="card-like-count" data-destination="Jeep Safari Desert">0</span>
+                        <img src="jeep.jpeg" alt="Jeep Safari Desert" loading="lazy">
+                        <div class="card-content">
+                            <h3>Jeep Safari Desert</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5 (2,134 reviews)</span>
+                            </div>
+                            <p>The major reason by which many people get attracted to undertake desert safaris in Dubai is the combination of fun, novelty and the Arabian hospitality. <strong>Best time to visit:</strong> November to March.</p>
+                            <button class="btn view-destination" data-destination="Jeep Safari Desert">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="The Serengeti Great Migration">🤍</button>
+                        <span class="card-like-count" data-destination="The Serengeti Great Migration">0</span>
+                        <img src="migra.jpeg" alt="The Serengeti" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Serengeti Great Migration</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (3,456 reviews)</span>
+                            </div>
+                            <p>It is a spectacular annual event where millions of wildebeest, zebra, and other ungulates migrate across the Serengeti-Mara ecosystem in search of grazing and water, following a clockwise pattern.<strong>Best time to visit:</strong> June to October for river crossings or December to March for calving season.</p>
+                            <button class="btn view-destination" data-destination="The Serengeti Great Migration">View Destination</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forests Category -->
+            <div class="category-section" id="forests">
+                <h2 class="category-title">Forest Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Amazon Jungle camp">🤍</button>
+                        <span class="card-like-count" data-destination="Amazon Jungle camp">0</span>
+                        <img src="amazon.jpeg" alt="Amazon Jungle camp" loading="lazy">
+                        <div class="card-content">
+                            <h3>Amazon Jungle camp</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (2,987 reviews)</span>
+                            </div>
+                            <p>The Amazon rainforest, covering much of northwestern Brazil and extending into Colombia, Peru and other South American countries, is the world's largest tropical rainforest, famed for its biodiversity. <strong>Best time to visit:</strong> Dry season (June to November).</p>
+                            <button class="btn view-destination" data-destination="Amazon Jungle camp">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Cambodia Jungle Trek">🤍</button>
+                        <span class="card-like-count" data-destination="Cambodia Jungle Trek">0</span>
+                        <img src="trek.jpeg" alt="Cambodia Jungle Trek" loading="lazy">
+                        <div class="card-content">
+                            <h3>Cambodia Jungle Trek</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (1,234 reviews)</span>
+                            </div>
+                            <p>Cambodia is jungle hiking a National Park trekking hiking,Gibbons watching in VenSai-Siempang National Park ,Community jungle trek and homestay,Days Trips to visit the volcanic lake ,waterfalls,gem mines,indigenous villages and their ancient cemeteries around Banlung Ratanakiri Cambodia.<strong>Best time to visit:</strong> November to March.</p>
+                            <button class="btn view-destination" data-destination="Cambodia Jungle Trek">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Sundarbans National Park">🤍</button>
+                        <span class="card-like-count" data-destination="Sundarbans National Park">0</span>
+                        <img src="park.jpeg" alt="Sundarbans National Park" loading="lazy">
+                        <div class="card-content">
+                            <h3>Sundarbans National Park</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0 (1,543 reviews)</span>
+                            </div>
+                            <p>It is a national park in West Bengal, India, and core part of tiger reserve and biosphere reserve. It is part of the Sundarbans on the Ganges Delta and adjacent to the Sundarban Reserve Forest in Bangladesh. It is located to south-west of Bangladesh.<strong>Best time to visit:</strong> October to March.</p>
+                            <button class="btn view-destination" data-destination="Sundarbans National Park">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="The Khasi Hills">🤍</button>
+                        <span class="card-like-count" data-destination="The Khasi Hills">0</span>
+                        <img src="khasi.jpeg" alt="The Khasi Hills" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Khasi Hills</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (876 reviews)</span>
+                            </div>
+                            <p>They are a low mountain range in the Meghalaya state of India. They are part of the Garo-Khasi-Jaintia range and are known for their scenic beauty. The Khasi Hills are home to the Khasi people, who have a traditional matrilineal social system.<strong>Best time to visit:</strong> October to May.</p>
+                            <button class="btn view-destination" data-destination="The Khasi Hills">View Destination</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Villas/Resorts Category -->
+            <div class="category-section" id="villas">
+                <h2 class="category-title">Luxury Villas & Resorts</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="The Glen Villas">🤍</button>
+                        <span class="card-like-count" data-destination="The Glen Villas">0</span>
+                        <img src="glen.jpeg" alt="The Glen Luxury Villa" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Glen Villas</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (543 reviews)</span>
+                            </div>
+                            <p>This sprawling 12 BHK villa in Lonavala is a massive 1.5-acre playground where luxury meets excitement. As you step inside, prepare to be wowed by not one but two grand living rooms and twelve enchanting bedrooms, each framed by huge glass windows that bring the lush outdoors right into your space.<strong>Best time to visit:</strong> October to February.</p>
+                            <button class="btn view-destination" data-destination="The Glen Villas">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Shebara resort">🤍</button>
+                        <span class="card-like-count" data-destination="Shebara resort">0</span>
+                        <img src="sebara.jpeg" alt="Shebara resort" loading="lazy">
+                        <div class="card-content">
+                            <h3>Shebara resort</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (765 reviews)</span>
+                            </div>
+                            <p>We create timeless experiences for our guests, balancing modern design with a focus on the present, while upholding hospitality's core values of generosity and compassion to shape lasting memories.<strong>Best time to visit:</strong> October to February.</p>
+                            <button class="btn view-destination" data-destination="Shebara resort">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Della sky dining">🤍</button>
+                        <span class="card-like-count" data-destination="Della sky dining">0</span>
+                        <img src="dine.jpeg" alt="Della sky dining" loading="lazy">
+                        <div class="card-content">
+                            <h3>Della sky dining</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (432 reviews)</span>
+                            </div>
+                            <p>Eclectic, audacious and inspiring all at once, the sky dining at Della Resorts is a flagship restaurant par excellence. It is one of the best restaurants in India serving the most exquisite Italian gourmet fare inspired by Jimmy Mistry's regular sojourns across Italy. The restaurant has manifested into a 4000 sq. ft, fine dining space, seating 180 discerning guests with a gorgeous al fresco sitting.<strong>Best time to visit:</strong> June to September or October to March.</p>
+                            <button class="btn view-destination" data-destination="Della sky dining">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Casa koko">🤍</button>
+                        <span class="card-like-count" data-destination="Casa koko">0</span>
+                        <img src="casa.jpeg" alt="Casa koko" loading="lazy">
+                        <div class="card-content">
+                            <h3>Casa koko</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (654 reviews)</span>
+                            </div>
+                            <p>Casa Koko stands as an unparalleled masterpiece of architectural grandeur.This exquisite 9-bedroom oceanfront villa is gracefully nestled within Punta Mita's prestigious enclave, seamlessly marrying the awe-inspiring beauty of its natural surroundings with unmatched opulence and comfort.<strong>Best time to visit:</strong> November to mid-December.</p>
+                            <button class="btn view-destination" data-destination="Casa koko">View Destination</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Sites Category -->
+            <div class="category-section" id="historical">
+                <h2 class="category-title">Historical Sites</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Magnet Hill">🤍</button>
+                        <span class="card-like-count" data-destination="Magnet Hill">0</span>
+                        <img src="magnet.jpeg" alt="Magnet Hill" loading="lazy">
+                        <div class="card-content">
+                            <h3>Magnet Hill</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (987 reviews)</span>
+                            </div>
+                            <p>It is a gravity hill located, near Leh in Leh district of Ladakh, India. The layout of the area and surrounding slopes create the optical illusion of a hill. The hill road is actually a downhill road. Objects and cars on the hill road may appear to roll uphill in defiance of gravity when they are, in fact, rolling downhill.<strong>Best time to visit:</strong> May to September.</p>
+                            <button class="btn view-destination" data-destination="Magnet Hill">View Destination</button>
+                        </div>
+                    </div>
+                
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="The Louvre">🤍</button>
+                        <span class="card-like-count" data-destination="The Louvre">0</span>
+                        <img src="louvre.jpeg" alt="The Louvre" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Louvre</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (5,432 reviews)</span>
+                            </div>
+                            <p>The Louvre Museum , is a national art museum in Paris, France, and one of the most famous museums in the world. It is located on the Right Bank of the Seine in the city's 1st arrondissement  and home to some of the most canonical works of Western art, including the Mona Lisa, Venus de Milo, and Winged Victory.<strong>Best time to visit:</strong> April to June, September to October.</p>
+                            <button class="btn view-destination" data-destination="The Louvre">View Destination</button>
+                        </div>
+                    </div>
+                
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="The Great Sphinx of Giza">🤍</button>
+                        <span class="card-like-count" data-destination="The Great Sphinx of Giza">0</span>
+                        <img src="giza.jpeg" alt="The Great Sphinx of Giza" loading="lazy">
+                        <div class="card-content">
+                            <h3>The Great Sphinx of Giza</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (4,321 reviews)</span>
+                            </div>
+                            <p>It is a limestone statue of a reclining sphinx, a mythical creature with the head of a human and the body of a lion.Facing east, it stands on the Giza Plateau on the west bank of the Nile in Giza, Egypt. The face of the Sphinx appears to represent the pharaoh Khafre.<strong>Best time to visit:</strong> October to April.</p>
+                            <button class="btn view-destination" data-destination="The Great Sphinx of Giza">View Destination</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <button class="card-like-btn" data-destination="Konark Sun Temple">🤍</button>
+                        <span class="card-like-count" data-destination="Konark Sun Temple">0</span>
+                        <img src="sun.jpeg" alt="Konark Sun Temple" loading="lazy">
+                        <div class="card-content">
+                            <h3>Konark Sun Temple</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (2,109 reviews)</span>
+                            </div>
+                            <p>It is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres , northeast from Puri city on the coastline in Puri district, Odisha, India.The temple is attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE.<strong>Best time to visit:</strong> October to March.</p>
+                            <button class="btn view-destination" data-destination="Konark Sun Temple">View Destination</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Destination Modal -->
+    <div class="destination-modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="like-container">
+                <button class="like-btn" id="modalLikeBtn">❤️</button>
+                <span class="like-count" id="modalLikeCount">0 likes</span>
+            </div>
+            <h2 id="modalTitle"></h2>
+            <div class="star-rating" id="modalRating"></div>
+            <p id="modalDescription"></p>
+            <div class="destination-details">
+                <h3>Details</h3>
+                <p><strong>Country:</strong> <span id="modalCountry"></span></p>
+                <p><strong>Language spoken:</strong> <span id="modalLanguage"></span></p>
+                <p><strong>Visa requirements:</strong> <span id="modalVisa"></span></p>
+                <p><strong>Best time to visit:</strong> <span id="modalBestTime"></span></p>
+                <p><strong>Activities:</strong> <span id="modalActivities"></span></p>
+            </div>
+            
+            <!-- Review Form -->
+            <div class="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <div class="star-rating-input">
+                        <span>Your Rating:</span>
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                        <input type="hidden" id="userRating" name="rating" value="0">
+                    </div>
+                    <textarea id="reviewText" placeholder="Share your experience..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+            
+            <!-- Reviews Section -->
+            <div class="reviews-section">
+                <h3>Recent Reviews</h3>
+                <div id="reviewsContainer">
+                    <!-- Reviews will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="footer">
+      
+        <div class="footer-main">
+          <div class="footer-box brand">
+            <h3 class="footer-logo"><img src="logo.jpeg" alt="ExploreEase logo"> ExploreEase</h3>
+            <p>We are passionate about helping you explore the most beautiful places around the world. Our team provides the best travel information and tours to make your trips unforgettable. </p>
+        
+            <div class="social-icons">
+              <i class='bx bxl-facebook'></i>
+              <i class='bx bxl-twitter'></i>
+              <i class='bx bxl-youtube'></i>
+              <i class='bx bxl-instagram'></i>
+            </div>
+          </div>
+      
+          <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login/Sign Up</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="plan.html">Plan it!</a></li>
+              <li><a href="index.html#view">Review</a></li>
+              <li><a href="index.html#foo">About Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-box">
+            <h4>contact Us</h4>
+            <ul>
+              <li><a href="#">Email : support@exploreease.com</a></li>
+              <li><a href="#">Ph no : 987654321</a></li>
+              <li><a href="#">Location : Hyderabad,India</a></li>
+            
+            </ul>
+          </div>
+          <div class="footer-section-newsletter">
+            <h2>Get Updated The Latest Newsletter!</h2>
+            <form>
+              <input type="email" placeholder="Enter email address" required>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        
+      
+          <div class="footer-box gallery">
+            <h4>Our Gallery</h4>
+            <div class="gallery-images">
+                <img src="3.jpeg" alt="">
+                <img src="hike.jpeg" alt="">
+                <img src="13.jpeg" alt="">
+                <img src="8.jpeg" alt="">
+                <img src="4.jpeg" alt="">
+                <img src="2.jpeg" alt="">
+                <img src="1.jpeg" alt="">
+                <img src="7.jpeg" alt="">
+                <img src="14.jpeg" alt="">
+                <img src="9.jpeg" alt="">
+                <img src="15.jpeg" alt="">
+                <img src="6.jpeg" alt="">
+                <img src="16.jpeg" alt="">
+                <img src="11.jpeg" alt="">
+                <img src="10.jpeg" alt="">
+                <img src="5.jpeg" alt="">
+                <img src="12.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© Copyright 2025 by ExploreEase.All rights are Reserved.</p>
+        </div>
+      
+        <div class="back-to-top" onclick="scrollToTop()">
+          <i class='bx bx-chevron-up'></i>
+        </div>
+      </footer>
+
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Destination details data object
+    const destinationDetails = {
+        "Palolem Beach": {
+            country: "India (Goa)",
+            language: "Konkani, English",
+            visa: "Visa requirements vary by nationality. Many countries can get visa on arrival.",
+            bestTime: "November to March",
+            activities: "Sunbathing, swimming, dolphin spotting, beach shacks, yoga retreats"
+        },
+        "Radhanagar Beach": {
+            country: "India (Andaman and Nicobar Islands)",
+            language: "Hindi, English",
+            visa: "Indian visa required. Restricted area permit needed for foreigners.",
+            bestTime: "October to May",
+            activities: "Snorkeling, scuba diving, beach walks, sunset viewing"
+        },
+        "Pink Beach": {
+            country: "Indonesia (Komodo Island)",
+            language: "Indonesian, English",
+            visa: "Visa-free entry for many nationalities (30 days)",
+            bestTime: "April to November",
+            activities: "Swimming, snorkeling, sunbathing, and exploring the surrounding area"
+        },
+        "Dead sea": {
+            country: "Jordan/Israel",
+            language: "Arabic, Hebrew, English",
+            visa: "Visa requirements depend on which side you visit",
+            bestTime: "Spring (March to May) or autumn (September to November)",
+            activities: "Floating, Spa Treatments, Sunbathing, Exploring the Area, Hiking, Dead2Red Marathon Relay, Olive Harvest"
+        },
+        "Jaisalmer Desert": {
+            country: "India (Rajasthan)",
+            language: "Hindi, Rajasthani, English",
+            visa: "Indian visa required",
+            bestTime: "October to March",
+            activities: "Desert safaris, camel rides, and exploring the city's attractions"
+        },
+        "Jeep Safari Desert": {
+            country: "United Arab Emirates",
+            language: "Arabic, English",
+            visa: "Visa on arrival for many nationalities",
+            bestTime: "November to March",
+            activities: "Dune bashing, sandboarding, camel riding, and cultural experiences like dinner with traditional music and dance"
+        },
+        "The Serengeti Great Migration": {
+            country: "Tanzania",
+            language: "Swahili, English",
+            visa: "Visa required for most visitors",
+            bestTime: "June to October for the river crossings and December to March for the calving season in the southern Serengeti",
+            activities: "Game Drives, Hot Air Balloon Safaris, Guided Walks, Cultural Experiences"
+        },
+        "Amazon Jungle camp": {
+            country: "Brazil/Peru/Colombia",
+            language: "Portuguese/Spanish, local indigenous languages",
+            visa: "Varies by country",
+            bestTime: "Dry season (June to November)",
+            activities: "Jungle trekking, wildlife spotting, river cruises, canopy walks, indigenous community visits"
+        },
+        "Cambodia Jungle Trek": {
+            country: "Cambodia",
+            language: "Khmer, English",
+            visa: "Visa available on arrival",
+            bestTime: "November to March",
+            activities: "Hiking, exploring temples, and experiencing the natural beauty of the landscape"
+        },
+        "Sundarbans National Park": {
+            country: "India (West Bengal)",
+            language: "Bengali, Hindi, English",
+            visa: "Indian visa required",
+            bestTime: "October to March",
+            activities: "Boat Safaris, Wildlife Spotting, Birdwatching, Exploring the Mangrove Forests, Village Life, Sundarban Hilsa Festival, Saraswati Puja"
+        },
+        "The Khasi Hills": {
+            country: "India (Meghalaya)",
+            language: "Khasi, English",
+            visa: "Indian visa required",
+            bestTime: "October to May",
+            activities: "Trekking and sightseeing, with temperatures ranging from 12°C to 25°C"
+        },
+        "The Glen Villas": {
+            country: "India (Lonavala)",
+            language: "Hindi, Marathi, English",
+            visa: "Indian visa required for international visitors",
+            bestTime: "Winter (October to February), Monsoon (June to September), Summer (March to May)",
+            activities: "Relaxation and Leisure, Outdoor Activities, Indoor Fun, Food and Drinks, Pet-Friendly, Explore Lonavala"
+        },
+        "Shebara resort": {
+            country: "India (Lonavala)",
+            language: "Hindi, Marathi, English",
+            visa: "Indian visa required for international visitors",
+            bestTime: "October to February",
+            activities: "Trekking, hiking, exploring attractions like Rajmachi Point and Karla/Bhaja Caves."
+        },
+        "Della sky dining": {
+            country: "India (Lonavala)",
+            language: "Hindi, English",
+            visa: "Indian visa required for international visitors",
+            bestTime: "During the monsoon and post-monsoon months (June to September or October to March)",
+            activities: "Enjoying a high-flying dining experience 150 feet in the air, Panoramic Views, Culinary Delights, Food Options, other activities, including adventure park activities, stay facilities, restaurants, and entertainment, Della Adventure Park, Spa & Wellness"
+        },
+        "Casa koko": {
+            country: "Mexico",
+            language: "Spanish, English",
+            visa: "Visa requirements vary by nationality",
+            bestTime: "November to mid-December",
+            activities: "Whale Watching, Sailing and Surfing, Beach Clubs and Restaurants, Golf and Tennis, Villa Amenities, Day Trips, Majahuitas Beach Club, San Pancho"
+        },
+        "Magnet Hill": {
+            country: "India (Ladakh)",
+            language: "Hindi, Ladakhi, English",
+            visa: "Indian visa required. Protected area permit needed for foreigners.",
+            bestTime: "During the summer months, from May to September",
+            activities: "Experience the Optical Illusion, Take Pictures, Explore the Area, Learn about the Phenomenon, Consider a Day Trip: Magnetic Hill is located on National Highway 1, making it easily accessible from Leh, which is about 27 kilometers away. Shop for Souvenirs"
+        },
+        "The Louvre": {
+            country: "France (Paris)",
+            language: "French, English",
+            visa: "Schengen visa required for many nationalities",
+            bestTime: "April to June, September to October",
+            activities: "Art viewing, guided tours, photography, museum workshops"
+        },
+        "The Great Sphinx of Giza": {
+            country: "Egypt",
+            language: "Arabic, English",
+            visa: "Visa on arrival available for many nationalities",
+            bestTime: "During the shoulder seasons (spring or autumn) or winter (October to April)",
+            activities: "Include exploring the Giza Plateau, taking camel or horse rides, and enjoying the sunset or sunrise views"
+        },
+        "Konark Sun Temple": {
+            country: "India (Odisha)",
+            language: "Odia, Hindi, English",
+            visa: "Indian visa required",
+            bestTime: "During the winter months (October to March)",
+            activities: "Explore the UNESCO World Heritage Site, admire its intricate carvings and architecture, visit the nearby Konark Archaeological Museum, and enjoy the scenic Chandrabhaga Beach"
+        }
+    };
+
+    // Category filtering functionality
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const categorySections = document.querySelectorAll('.category-section');
+    
+    // Get category from URL if present
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlCategory = urlParams.get('category');
+    
+    // Filter destinations when category button is clicked
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const category = this.dataset.category;
+            
+            // Update active button
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show/hide categories
+            if (category === 'all') {
+                categorySections.forEach(section => {
+                    section.style.display = 'block';
+                });
+            } else {
+                categorySections.forEach(section => {
+                    section.style.display = section.id === category ? 'block' : 'none';
+                });
+            }
+            
+            // Update URL without reload
+            history.pushState(null, '', `?category=${category}`);
+        });
+    });
+    
+    // If URL has category parameter, activate it
+    if (urlCategory) {
+        const targetBtn = document.querySelector(`.category-btn[data-category="${urlCategory}"]`);
+        if (targetBtn) targetBtn.click();
+    }
+    
+    // Like functionality for destination cards
+    function setupLikeButton(btn, destination) {
+        const likeCountEl = document.querySelector(`.card-like-count[data-destination="${destination}"]`);
+        let liked = localStorage.getItem(`liked_${destination}`) === 'true';
+        let likes = parseInt(localStorage.getItem(`likes_${destination}`)) || 0;
+        
+        // Initialize button state
+        updateLikeButton(btn, liked, likes, likeCountEl);
+        
+        btn.addEventListener('click', function() {
+            liked = !liked;
+            likes = liked ? likes + 1 : likes - 1;
+            
+            // Update UI
+            updateLikeButton(btn, liked, likes, likeCountEl);
+            
+            // Save to localStorage
+            localStorage.setItem(`liked_${destination}`, liked);
+            localStorage.setItem(`likes_${destination}`, likes);
+        });
+    }
+    
+    function updateLikeButton(btn, liked, likes, countEl) {
+        if (liked) {
+            btn.innerHTML = '❤️';
+            btn.classList.add('liked');
+        } else {
+            btn.innerHTML = '🤍';
+            btn.classList.remove('liked');
+        }
+        if (countEl) countEl.textContent = likes;
+    }
+    
+    // Initialize all card like buttons
+    document.querySelectorAll('.card-like-btn').forEach(btn => {
+        setupLikeButton(btn, btn.dataset.destination);
+    });
+    
+    // Destination modal functionality
+    const modal = document.getElementById('destinationModal');
+    const closeModal = document.querySelector('.close-modal');
+    const viewButtons = document.querySelectorAll('.view-destination');
+    const modalLikeBtn = document.getElementById('modalLikeBtn');
+    const modalLikeCount = document.getElementById('modalLikeCount');
+    const reviewForm = document.getElementById('reviewForm');
+    const reviewsContainer = document.getElementById('reviewsContainer');
+    const starInputs = document.querySelectorAll('.star-rating-input i');
+    const userRatingInput = document.getElementById('userRating');
+    
+    let currentDestination = null;
+    
+    // Initialize star rating input
+    starInputs.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = parseInt(this.dataset.rating);
+            userRatingInput.value = rating;
+            
+            // Update star display
+            starInputs.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.remove('far');
+                    s.classList.add('fas');
+                } else {
+                    s.classList.remove('fas');
+                    s.classList.add('far');
+                }
+            });
+        });
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.dataset.rating);
+            starInputs.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('hover');
+                } else {
+                    s.classList.remove('hover');
+                }
+            });
+        });
+        
+        star.addEventListener('mouseout', function() {
+            const currentRating = parseInt(userRatingInput.value);
+            starInputs.forEach((s, index) => {
+                s.classList.remove('hover');
+                if (index < currentRating) {
+                    s.classList.add('fas');
+                    s.classList.remove('far');
+                } else {
+                    s.classList.add('far');
+                    s.classList.remove('fas');
+                }
+            });
+        });
+    });
+    
+    // Modal like button functionality
+    modalLikeBtn.addEventListener('click', function() {
+        const destination = currentDestination;
+        if (!destination) return;
+        
+        let liked = localStorage.getItem(`liked_${destination}`) === 'true';
+        let likes = parseInt(localStorage.getItem(`likes_${destination}`)) || 0;
+        
+        liked = !liked;
+        likes = liked ? likes + 1 : likes - 1;
+        
+        // Update all like buttons for this destination
+        document.querySelectorAll(`.card-like-btn[data-destination="${destination}"]`).forEach(btn => {
+            const countEl = document.querySelector(`.card-like-count[data-destination="${destination}"]`);
+            updateLikeButton(btn, liked, likes, countEl);
+        });
+        
+        // Update modal like button
+        updateLikeButton(modalLikeBtn, liked, likes, modalLikeCount);
+        
+        // Save to localStorage
+        localStorage.setItem(`liked_${destination}`, liked);
+        localStorage.setItem(`likes_${destination}`, likes);
+    });
+    
+    // Review form submission
+    reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const reviewText = document.getElementById('reviewText').value;
+        const rating = userRatingInput.value;
+        
+        if (!rating || rating === '0') {
+            alert('Please select a star rating');
+            return;
+        }
+        
+        if (!reviewText.trim()) {
+            alert('Please write your review');
+            return;
+        }
+        
+        addReview('You', rating, reviewText);
+        
+        // Reset form
+        reviewForm.reset();
+        userRatingInput.value = '0';
+        starInputs.forEach(star => {
+            star.classList.remove('fas');
+            star.classList.add('far');
+        });
+    });
+    
+    function addReview(reviewer, rating, text) {
+        const reviewDiv = document.createElement('div');
+        reviewDiv.className = 'review';
+        
+        const now = new Date();
+        const dateStr = now.toLocaleDateString();
+        
+        reviewDiv.innerHTML = `
+            <div class="review-header">
+                <div class="reviewer">${reviewer}</div>
+                <div class="review-date">${dateStr}</div>
+            </div>
+            <div class="review-stars">
+                ${'<i class="fas fa-star"></i>'.repeat(rating)}
+                ${'<i class="far fa-star"></i>'.repeat(5 - rating)}
+            </div>
+            <p class="review-text">${text}</p>
+        `;
+        
+        reviewsContainer.prepend(reviewDiv);
+    }
+    
+    // Sample reviews
+    const sampleReviews = [
+        {
+            reviewer: 'John D.',
+            rating: 5,
+            text: 'Absolutely breathtaking! The views were incredible and the experience was unforgettable.',
+            date: '2025-03-15'
+        },
+        {
+            reviewer: 'Sarah M.',
+            rating: 4,
+            text: 'Great destination, but could use better facilities. Otherwise, highly recommended!',
+            date: '2025-02-28'
+        }
+    ];
+    
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.destination-card');
+            currentDestination = this.dataset.destination;
+            const title = card.querySelector('h3').textContent;
+            const imageSrc = card.querySelector('img').src;
+            const description = card.querySelector('p').textContent;
+            const rating = card.querySelector('.star-rating').innerHTML;
+            
+            // Load destination data
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modalRating').innerHTML = rating;
+            
+            // Get details from our data object
+            const details = destinationDetails[currentDestination] || {};
+            document.getElementById('modalCountry').textContent = details.country || "Information not available";
+            document.getElementById('modalLanguage').textContent = details.language || "Information not available";
+            document.getElementById('modalVisa').textContent = details.visa || "Information not available";
+            document.getElementById('modalBestTime').textContent = details.bestTime || "Information not available";
+            document.getElementById('modalActivities').textContent = details.activities || "Information not available";
+            
+            // Load likes for this destination
+            const liked = localStorage.getItem(`liked_${currentDestination}`) === 'true';
+            const likes = parseInt(localStorage.getItem(`likes_${currentDestination}`)) || 0;
+            
+            // Update modal like button
+            updateLikeButton(modalLikeBtn, liked, likes, modalLikeCount);
+            
+            // Clear and reload reviews
+            reviewsContainer.innerHTML = '';
+            sampleReviews.forEach(review => {
+                addReview(review.reviewer, review.rating, review.text);
+            });
+            
+            // Show modal
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+    });
+    
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    });
+    
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+    });
+});
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
